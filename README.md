@@ -31,3 +31,8 @@ and directory structure needed for this:
 - `usethis::use_test("FUNCTION_NAME")` can be used to create the test file for each function
 
 *Note: `tests/testthat/helper-count_classes.R` was created manually, as there is no `usethis` function to automate this.*
+
+## Dependencies:
+R and the `testthat` & `tidyverse` R packages. As well as either Jupyter or
+the `Rmarkdown` package.
+
