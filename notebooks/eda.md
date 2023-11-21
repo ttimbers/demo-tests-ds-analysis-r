@@ -13,16 +13,16 @@ calculate the number of observations in each class of a data set.
 library(tidyverse)
 ```
 
-    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──
-
-    ## ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
-    ## ✓ tibble  3.1.6     ✓ dplyr   1.0.7
-    ## ✓ tidyr   1.2.0     ✓ stringr 1.4.0
-    ## ✓ readr   2.1.2     ✓ forcats 0.5.1
-
+    ## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+    ## ✔ dplyr     1.1.2     ✔ readr     2.1.4
+    ## ✔ forcats   1.0.0     ✔ stringr   1.5.0
+    ## ✔ ggplot2   3.4.3     ✔ tibble    3.2.1
+    ## ✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+    ## ✔ purrr     1.0.2     
     ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-    ## x dplyr::filter() masks stats::filter()
-    ## x dplyr::lag()    masks stats::lag()
+    ## ✖ dplyr::filter() masks stats::filter()
+    ## ✖ dplyr::lag()    masks stats::lag()
+    ## ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 
 ``` r
 source("../R/count_classes.R")
@@ -35,7 +35,7 @@ where we would like to calculate the number of observations in each
 class:
 
 ``` r
-cancer <- read_csv("https://github.com/UBC-DSCI/introduction-to-datascience/raw/master/data/wdbc.csv")
+cancer <- read_csv("https://raw.githubusercontent.com/UBC-DSCI/introduction-to-datascience/main/data/wdbc.csv")
 ```
 
     ## Rows: 569 Columns: 12
@@ -64,8 +64,9 @@ cancer
     ##  8 8.45e7 M     -0.118   0.358   -0.0728 -0.219      1.60       1.14      0.0610
     ##  9 8.45e5 M     -0.320   0.588   -0.184  -0.384      2.20       1.68      1.22  
     ## 10 8.45e7 M     -0.473   1.10    -0.329  -0.509      1.58       2.56      1.74  
-    ## # … with 559 more rows, and 3 more variables: Concave_Points <dbl>,
-    ## #   Symmetry <dbl>, Fractal_Dimension <dbl>
+    ## # ℹ 559 more rows
+    ## # ℹ 3 more variables: Concave_Points <dbl>, Symmetry <dbl>,
+    ## #   Fractal_Dimension <dbl>
 
 To calculate the number observations of each class, we will use the
 `count_classes` function from the `../R/count_classes.R` file that we

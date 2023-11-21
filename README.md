@@ -14,7 +14,13 @@ and who calculates the number observations of each class of a data set.
 
 The tests for `count_classes` live in `tests/testthat/test-count_classes.R`,
 and the helper data for the tests lives in `tests/testthat/helper-count_classes.R`.
-The test suite can be run via `testthat::test_dir("tests/testthat")`.
+
+The test suite can be run via: 
+
+```
+testthat::test_dir("tests/testthat")
+```
+
 `testthat::test_dir("tests/testthat")` first runs any files that begin with `helper*` 
 and then any files that begin with `test*`.
 

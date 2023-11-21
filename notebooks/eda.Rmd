@@ -17,7 +17,7 @@ source("../R/count_classes.R")
 Here's some data (the Wisconsin Breast Cancer data set, originally from the [UCI machine learning repository](https://archive-beta.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+diagnostic)) where we would like to calculate the number of observations in each class:
 
 ```{r load-data}
-cancer <- read_csv("https://github.com/UBC-DSCI/introduction-to-datascience/raw/master/data/wdbc.csv")
+cancer <- read_csv("https://raw.githubusercontent.com/UBC-DSCI/introduction-to-datascience/main/data/wdbc.csv")
 cancer
 ```
 
