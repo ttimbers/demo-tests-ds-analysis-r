@@ -1,5 +1,5 @@
 library(testthat)
-source("../../R/count_classes.r")
+source("../../R/count_classes.R")
 
 test_that("`count_classes` should return a tibble", {
   expect_s3_class(count_classes(two_classes_3_obs, class_lables), "data.frame")
